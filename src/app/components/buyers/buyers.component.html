@@ -20,6 +20,24 @@
         <td><button class="btn btn-danger btn-sm" (click)="remove(buyer)">Remove</button></td>
     </tr>
 </table>
+
+
+    <div class="input-group col-md-5 pl-0 my-lg-4 my-2">
+        <span class="input-group-addon">First name</span>
+        <input [(ngModel)]= "firstname" type="text" class="form-control" />
+    </div>
+    <div class="input-group col-md-5 pl-0 my-lg-4 my-2">
+        <span class="input-group-addon">Last name</span>
+        <input [(ngModel)]= "lastname" type="text" class="form-control" />
+    </div>
+    <div class="input-group col-md-5 pl-0 my-lg-4 my-2">
+        <span class="input-group-addon">Email</span>
+        <input [(ngModel)]= "email" type="text" class="form-control" />
+    </div>
+    <div class="input-group col-md pl-0 my-lg-4 my-2">
+        <button type="button" class="btn btn-primary" (click)="addBuyer()">Add Buyer</button>
+    </div>
+
 <!--
 <div class="input-group col-md pl-0 my-lg-4 my-2">
     <button type="button" class="btn btn-primary" (click)="addContact()">Add Contact</button>
