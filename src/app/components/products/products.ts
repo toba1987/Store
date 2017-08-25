@@ -2,7 +2,7 @@ export let products = [
     {
         id: 1,
         name: 'Hled',
-        quantity: '100',
+        quantity: '100'
     },
     {
         id: 2,

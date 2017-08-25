@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { BuyersComponent } from './components/buyers/buyers.component';
 import { ProductsComponent } from './components/products/products.component';
-
+import { BuyerDetailsComponent } from './components/buyers/buyer-details/buyer-details.component';
 
 
 
@@ -15,7 +15,17 @@ const appRoutes: Routes = [
     },
     {
         path: 'buyers',
-        component: BuyersComponent
+        component: BuyersComponent,
+       /* children: [
+            {
+                path: ':id',
+                component: BuyerDetailsComponent
+            }
+        ]*/
+    },
+    {
+        path: 'buyers/:id',
+        component: BuyerDetailsComponent
     },
     {
         path: 'products',

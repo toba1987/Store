@@ -10,16 +10,10 @@ export class BuyersService {
         this.buyers = buyers;
     }
 
-    public getContacts(){
+    public getBuyers(){
         return this.buyers;
     }
 
-  /*  public addBuyer(firstname, lastname, email){
-
-            this.buyers.push['firstName'] = firstname,
-            this.buyers.push['lastName'] = lastname,
-            this.buyers.push['email'] = email
-    }*/
    public addBuyer(firstname, lastname, email) {
 
         this.buyers.push({

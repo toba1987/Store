@@ -1,0 +1,15 @@
+<h1>Details of Buyer</h1>
+<ul class="list-group">
+    <li class="list-group-item">First name: {{ buyer.firstName }}</li>
+    <li class="list-group-item">Last name: {{ buyer.lastName }}</li>
+    <li class="list-group-item">Email: {{ buyer.email }}</li>
+</ul>
+<h3>Ordered by the buyer</h3>
+<ul class="list-group" *ngFor="let product of products">
+    <li class="list-group-item">Name: {{ product.name }}</li>
+    <li class="list-group-item">Quantity: {{ product.quantity }}</li>
+
+</ul>
+
+
+<!-- {{ products | json }} -->

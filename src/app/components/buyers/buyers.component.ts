@@ -16,7 +16,7 @@ export class BuyersComponent {
 
   constructor(private buyersService: BuyersService) {
 
-      this.buyers = buyersService.getContacts();
+      this.buyers = buyersService.getBuyers();
 
 
   }
@@ -28,7 +28,6 @@ export class BuyersComponent {
     }
 
     addBuyer(){
-
         this.buyersService.addBuyer(this.firstname,this.lastname,this.email);
 
         this.firstname = '';
