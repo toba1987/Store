@@ -18,7 +18,7 @@ const appRoutes: Routes = [
         component: BuyersComponent,
        /* children: [
             {
-                path: ':id',
+                path: 'buyers/:id',
                 component: BuyerDetailsComponent
             }
         ]*/
